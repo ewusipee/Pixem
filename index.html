@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="" content="" />
+        <title>Pixem, Convert with ease!</title>
+        <link rel="stylesheet" type="text/css" href="styles/screen.css" media="screen" />
+        <script type="text/javascript" src="scripts/helpful.js"></script>
+        <script type="text/javascript" src="scripts/rollover.js"></script>
+        <script type="text/javascript" src="scripts/label.js"></script>
+        <script type="text/javascript" src="scripts/convert.js"></script>
+        <script type="text/javascript">
+        	addListener(window, "load", Convert.init, false);
+        	addListener(window, "load", Rollover.init, false);
+        	addListener(window, "load", Label.init, false);
+        </script>
+    </head>
+    <body>
+        <div id="header">
+        	<span id="main-heading">{Pixem}</span>
+        	<h2>Design with ease!</h2>
+        </div>
+        <div id="content">
+        	<div id="wrapper">
+        		<div id="convert-label">
+        			<span>Convert</span>
+        		</div>
+        		<div id="form-holder">
+        			<form name="convert" id="convert">
+        				<div id="conversion-direction-div">
+        					<select name="direction" id="direction">
+        						<option value="Pixels to Ems" selected="selected">Pixels to Ems</option>
+        						<option value="Ems to Pixels">Ems to Pixels</option>
+        					</select>
+        				</div>
+        				<div id="input-div" class="input-div">
+        					<input type="text" name="input" id="input" class="input" />
+        					<span id="from-label" class="unit-label">px</span>
+        				</div>
+        				<div id="equals-sign-div">
+        					<span id="equals-sign">=</span>
+        				</div>
+        				<div id="result-div" class="input-div">
+        					<input type="text" name="result" id="result" class="input" />
+        					<span id="to-label" class="unit-label">em</span>
+        				</div>
+        			</form>
+        		</div>
+        	</div>
+        </div>
+        <div id="extras">
+        	<div id="about">
+        		<span class="brand">Pixem</span> is a small JavaScript tool that makes building flexible and responsive CSS layouts easy.<br />It converts size in <span class="keyword">pixels</span> to relative <span class="keyword">em</span> units and vice versa.
+        	</div>
+        	<div id="digg">
+        		<div id="digg-header">
+        			If you enjoy using <span class="brand">Pixem</span>, do tell others about it!<br /> You can also follow us at:
+        		</div>
+        		<div id="digg-sites">
+        			<div class="site">
+        				<img src="images/facebook.png" title="Facebook" class="social" />
+	        		</div>
+	        		<div class="site">
+	        			<img src="images/twitter.png" title="Twitter" class="social" />
+	        		</div>
+	        		<div class="site">
+	        			<img src="images/google.png" title="Google" class="social" />
+	        		</div>
+	        		<div class="site">
+	        			<img src="images/linkedin.png" title="Linkedin" class="social" />
+	        		</div>
+	        	</div>
+        	</div>
+        </div>
+        <div id="footer">
+        	<p>Designed and developed by <span class="author">Precious Nyarko</span> for your design pleasure.</p>
+        </div>
+    </body>
+</html>
